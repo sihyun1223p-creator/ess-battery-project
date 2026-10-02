@@ -110,7 +110,7 @@ def run_robustness(data_dir=DATA_DIR, out_dir=RESULT_DIR, n_rep=30, show=True):
     n = early['사용 사이클 n']
     axes[1].plot(n, early['Valid MAPE(%)'], marker='o', label='Valid (Batch 1)')
     axes[1].plot(n, early['Test MAPE(%)'], marker='s', label='Test (Batch 2)')
-    axes[1].set(xlabel='사용한 사이클 수 n  (ΔQ = Q_n − Q_10)', ylabel='MAPE (%)', title='조기 예측 민감도', ylim=(0, None))
+    axes[1].set(xlabel='사용한 사이클 수 n  (ΔQ = Q_n - Q_10)', ylabel='MAPE (%)', title='조기 예측 민감도', ylim=(0, None))
     axes[1].set_xticks(list(n)); axes[1].legend()
     fig.tight_layout(); fig.savefig(os.path.join(out_dir, 'robustness.png'), dpi=150)
 
