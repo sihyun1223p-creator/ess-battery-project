@@ -38,8 +38,6 @@
 │   ├── extra_experiments.md          # 추가 실험 1, 2 결과 표
 │   ├── robustness.md                 # 추가 실험 3, 4 결과 표
 │   └── *.png                         # eda_*, pred_vs_obs, mape_compare, coef, extra_experiments, robustness
-├── docs/
-│   └── day1_report.pdf               # DAY 1 보고서 (EDA · 모델 설계 전략)
 ├── requirements.txt
 └── README.md
 ```
@@ -58,7 +56,7 @@ python src/robustness.py  # 추가 실험 3, 4
 
 ## EDA
 
-그래프별 상세 해석은 [DAY 1 보고서](docs/day1_report.pdf)에 정리했다. 그래프는 `notebooks/01_EDA.ipynb`에서 생성한다.
+그래프는 `notebooks/01_EDA.ipynb`에서 생성한다.
 
 - Cycle Life 분포
   - (정제 전 기준) Batch 1은 534~1,227(평균 845), Batch 2는 392~1,186(평균 566), Batch 3는 541~1,935(평균 1,060)
